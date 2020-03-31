@@ -5,7 +5,7 @@ namespace: manuela-stormshift-machine-sensor
 resources:
 - machine-sensor-namespace.yaml
 bases:
-#- github.com/sa-mw-dach/manuela-gitops/config/templates/manuela/machine-sensor
+#- github.com/lavlas/manuela-gitops/config/templates/manuela/machine-sensor
 - ../../../templates/manuela-openshift-prod/machine-sensor
 - ../../../templates/manuela-team-rolebindings
 configMapGenerator:
