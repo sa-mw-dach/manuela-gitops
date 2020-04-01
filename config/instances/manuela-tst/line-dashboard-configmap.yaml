@@ -5,7 +5,7 @@ metadata:
 data:
   config.json: |-
     {
-        "websocketHost": "http://messaging-manuela-tst-all.apps..core-aionedge.dev.datahub.redhat.com",
+        "websocketHost": "http://messaging-manuela-tst-all.apps.core-aionedge.dev.datahub.redhat.com",
         "websocketPath": "/api/service-web/socket",
         "SERVER_TIMEOUT": 20000
     }
