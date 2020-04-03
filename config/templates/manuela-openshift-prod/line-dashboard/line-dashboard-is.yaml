@@ -54,3 +54,10 @@ spec:
     importPolicy: {}
     referencePolicy:
       type: Local
+  - name: 0.3.1-16
+    from:
+      kind: DockerImage
+      name: quay.io/llasmith/iot-frontend:0.3.1-16
+    importPolicy: {}
+    referencePolicy:
+      type: Local
