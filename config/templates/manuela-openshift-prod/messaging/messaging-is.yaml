@@ -53,3 +53,10 @@ spec:
     importPolicy: {}
     referencePolicy:
       type: Local
+  - name: 0.3.2-71
+    from:
+      kind: DockerImage
+      name: quay.io/llasmith/iot-consumer:0.3.2-71
+    importPolicy: {}
+    referencePolicy:
+      type: Local
