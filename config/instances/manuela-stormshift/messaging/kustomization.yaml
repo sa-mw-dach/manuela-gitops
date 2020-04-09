@@ -7,6 +7,7 @@ resources:
 - messaging-operatorgroup.yaml
 patchesStrategicMerge:
 - route.yaml
+- messaging-configmap.yaml
 bases:
 #- github.com/lavlas/manuela-gitops/config/templates/manuela/messaging
 - ../../../templates/manuela-openshift-prod/messaging
