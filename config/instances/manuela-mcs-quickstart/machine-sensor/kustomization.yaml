@@ -1,15 +1,14 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-# Comment out: MCS disregards namespaces
-## namespace: manuela-quickstart-machine-sensor
-##
-##resources:
-## - machine-sensor-namespace.yaml
+# MCS disregards namespaces but keep it in here
+namespace: manuela-sensors-mcs
+
+resources:
+- machine-sensor-namespace.yaml
 
 
 bases:
-#- github.com/sa-mw-dach/manuela-gitops/config/templates/manuela/machine-sensor
 - ../../../templates/manuela-openshift/machine-sensor
 
 patchesStrategicMerge:
@@ -19,12 +18,15 @@ patchesStrategicMerge:
 configMapGenerator:
 - name: machine-sensor-1
   behavior: merge
-  envs:
-  - machine-sensor-1-configmap.properties
+  env: machine-sensor-1-configmap.properties
+
 - name: machine-sensor-2
   behavior: merge
-  envs:
-  - machine-sensor-2-configmap.properties
+  env: machine-sensor-2-configmap.properties
+
+
+
+
 
 images:
 - name: machine-sensor

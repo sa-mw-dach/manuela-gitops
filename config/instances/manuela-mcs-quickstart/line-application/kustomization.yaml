@@ -1,0 +1,31 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+
+namespace: manuela-lineapp-mcs
+
+resources:
+- line-application-namespace.yaml
+- messaging-operatorgroup.yaml
+
+patchesStrategicMerge:
+- messaging-route.yaml
+- messaging-deployment.yaml
+- line-dashboard-route.yaml
+- line-dashboard-configmap.yaml
+- line-dashboard-deployment.yaml
+
+bases:
+
+- ../../../templates/manuela-openshift/line-dashboard
+- ../../../templates/manuela-openshift/messaging
+
+images:
+- name: line-dashboard
+  newName: quay.io/manuela/iot-frontend
+  newTag: quickstart
+
+- name: messaging
+  newName: quay.io/manuela/iot-consumer
+  newTag: quickstart
+
