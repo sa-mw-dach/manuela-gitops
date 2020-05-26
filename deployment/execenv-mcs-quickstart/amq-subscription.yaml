@@ -2,6 +2,7 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   name: amq-broker
+  namespace: manuela-lineapp-mcs
 spec:
   channel: alpha
   installPlanApproval: Automatic
