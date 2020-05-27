@@ -7,7 +7,7 @@ metadata:
     app: manuela-line-application
   annotations:
     apps.open-cluster-management.io/github-path: config/instances/manuela-mcs-quickstart/line-application
-    apps.open-cluster-management.io/github-branch: multicluster-subscription-operator
+    apps.open-cluster-management.io/github-branch: noAMQ
 spec:
   name: manuela-line-application-subscription
   channel: manuela-lineapp-mcs/manuela-mcs-gitops-channel
