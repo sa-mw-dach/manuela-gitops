@@ -22,7 +22,7 @@ bases:
 - ../../../templates/manuela-openshift-prod/messaging
 
 # Comment/uncomment following line to disable/enable Event Streaming from Edge to Core
-- ../../../templates/manuela-openshift-prod/messaging-kafka
+#- ../../../templates/manuela-openshift-prod/messaging-kafka
 
 - ../../../templates/installplan-approver
 
