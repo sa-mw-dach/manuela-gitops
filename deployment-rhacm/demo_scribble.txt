@@ -1,0 +1,20 @@
+# Using your laptop, login as manuela-ops user to RHACM:
+> oc login -u manuela-ops --server=https://api.rhacm.stormshift.coe.muc.redhat.com:6443
+
+# Make Sure manuela-ops user has role subscription-admin
+# This is necessary to allow for different namespaces in managed clusters
+# (see XXXX)
+dfroehli:~/RedHat/projects/manuela/manuela-gitops/rhacm-exploration > oc apply -f clusterrolebinding-subscription-admin.yaml
+clusterrolebinding.rbac.authorization.k8s.io/open-cluster-management:subscription-admin configured
+
+dfroehli:~/RedHat/projects/manuela/manuela-gitops/rhacm-exploration > oc apply -f machinesensor.yaml
+namespace/manuela-rhacm-prd-machine-sensor created
+channel.apps.open-cluster-management.io/manuela-gitops-repo created
+placementrule.apps.open-cluster-management.io/machine-sensor-rule created
+subscription.apps.open-cluster-management.io/machinesensor-sub created
+application.app.k8s.io/machinesensor-app created
+
+# Login to RHACM using manuela-ops and see deployments happening
+
+# CLEANUP: delete the namespace in RHACM
+dfroehli:~/RedHat/projects/manuela/manuela-gitops/rhacm-exploration > oc delete project manuela-rhacm-prd-machine-sensor
