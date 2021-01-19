@@ -1,0 +1,97 @@
+# ----------------- COMMON STUFF ----------------
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: manuela-rhacm-prd-factory
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: manuela-gitops-repo
+  namespace: manuela-rhacm-prd-factory
+spec:
+  type: Git
+  pathname: https://github.com/DanielFroehlich/manuela-gitops.git
+
+# ----------------- SENSOR STUFF ----------------
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: machine-sensor-rule
+  namespace: manuela-rhacm-prd-factory
+spec:
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      manuelaDeploySensor: "True"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: machinesensor-sub
+  namespace: manuela-rhacm-prd-factory
+  labels:
+    app: machinesensor-app
+  annotations:
+# WTF is this an annotation?!:
+    apps.open-cluster-management.io/github-path: config/instances/manuela-stormshift/machine-sensor
+spec:
+  channel:  manuela-rhacm-prd-factory/manuela-gitops-repo
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: machine-sensor-rule
+
+# ----------------- MESSAGING STUFF ----------------
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: messaging-rule
+  namespace: manuela-rhacm-prd-factory
+spec:
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      manuelaDeployMessaging: "True"
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: messaging-sub
+  namespace: manuela-rhacm-prd-factory
+  labels:
+    app: messaging-app
+  annotations:
+# WTF is this an annotation?!:
+    apps.open-cluster-management.io/github-path: config/instances/manuela-stormshift/messaging
+spec:
+  channel:  manuela-rhacm-prd-factory/manuela-gitops-repo
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: messaging-rule
+
+---
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  name: manuela-rhacm-prd-factory-app
+  namespace: manuela-rhacm-prd-factory
+spec:
+  componentKinds:
+  - group: apps.open-cluster-management.io
+    kind: Subscription
+  descriptor: {}
+  selector:
+    matchExpressions:
+    - key: app
+      operator: In
+      values:
+      - machinesensor-app
+      - messaging-app
