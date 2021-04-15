@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: manuela-rhacm-prd-machine-sensor
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: manuela-gitops-repo
+  namespace: manuela-rhacm-prd-machine-sensor
+spec:
+  type: Git
+  pathname: https://github.com/DanielFroehlich/manuela-gitops.git
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: machine-sensor-rule
+  namespace: manuela-rhacm-prd-machine-sensor
+spec:
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      manuelaTest: factoryline
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: machinesensor-sub
+  namespace: manuela-rhacm-prd-machine-sensor
+  labels:
+    app: machinesensor-app
+  annotations:
+# WTF is this an annotation?!:
+    apps.open-cluster-management.io/github-path: config/instances/manuela-stormshift/machine-sensor
+spec:
+  channel:  manuela-rhacm-prd-machine-sensor/manuela-gitops-repo
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: machine-sensor-rule
+---
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  name: machinesensor-app
+  namespace: manuela-rhacm-prd-machine-sensor
+spec:
+  componentKinds:
+  - group: apps.open-cluster-management.io
+    kind: Subscription
+  descriptor: {}
+  selector:
+    matchExpressions:
+    - key: app
+      operator: In
+      values:
+      - machinesensor-app
