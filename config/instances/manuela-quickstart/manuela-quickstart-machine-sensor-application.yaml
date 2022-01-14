@@ -2,11 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: manuela-quickstart-machine-sensor
-  namespace: argocd
+  namespace: openshift-gitops
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default
+  project: manuela-quickstart
   source:
     repoURL: https://github.com/stefan-bergstein/manuela-gitops.git
     targetRevision: master
