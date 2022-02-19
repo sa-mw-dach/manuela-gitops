@@ -4,6 +4,8 @@ kind: Kustomization
 namespace: manuela-quickstart-messaging
 resources:
 - messaging-namespace.yaml
+- manuela-quickstart-messaging-rolebinding.yaml
+
 #- messaging-operatorgroup.yaml
 patchesStrategicMerge:
 - route.yaml
