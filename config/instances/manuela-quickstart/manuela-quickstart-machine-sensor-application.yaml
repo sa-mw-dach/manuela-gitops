@@ -6,10 +6,10 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: manuela-quickstart
+  project: default
   source:
     repoURL: https://github.com/stefan-bergstein/manuela-gitops.git
-    targetRevision: master
+    targetRevision: HEAD
     path: config/instances/manuela-quickstart/machine-sensor
   destination:
     server: https://kubernetes.default.svc
@@ -18,6 +18,8 @@ spec:
     automated: 
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
   ignoreDifferences:
   - group: apps
     kind: Deployment
