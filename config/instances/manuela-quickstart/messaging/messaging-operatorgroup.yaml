@@ -6,7 +6,7 @@ metadata:
   name: manuela-quickstart-messaging
   namespace: manuela-quickstart-messaging
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-8"
 spec:
   targetNamespaces:
   - manuela-quickstart-messaging

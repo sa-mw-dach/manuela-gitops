@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: manuela-quickstart-machine-sensor
 resources:
 - machine-sensor-namespace.yaml
+- manuela-quickstart-machine-sensor-rolebinding.yaml
 bases:
 #- github.com/sa-mw-dach/manuela-gitops/config/templates/manuela/machine-sensor
 - ../../../templates/manuela-openshift/machine-sensor

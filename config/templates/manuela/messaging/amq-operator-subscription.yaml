@@ -3,11 +3,11 @@ kind: Subscription
 metadata:
   name: amq-broker
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-6"
 spec:
-  channel: current
-  installPlanApproval: Manual
-  name: amq-broker
+  channel: 7.x
+  installPlanApproval: Automatic
+  name: amq-broker-rhel8
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: amq-broker-operator.v0.15.0
+  startingCSV: amq-broker-operator.v7.9.1-opr-2
