@@ -3,7 +3,7 @@ kind: Subscription
 metadata:
   name: amq-broker
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-6"
 spec:
   channel: 7.x
   installPlanApproval: Automatic
