@@ -1,5 +1,5 @@
 {
-    "websocketHost": "http://messaging-manuela-quickstart-messaging.apps.ocp5.stormshift.coe.muc.redhat.com",
+    "websocketHost": "http://messaging-manuela-quickstart-messaging.apps-crc.testing",
     "websocketPath": "/api/service-web/socket",
     "SERVER_TIMEOUT": 20000
 }
