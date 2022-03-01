@@ -1,0 +1,47 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaMirrorMaker2
+metadata:
+  name: factory-to-rhods
+  namespace: manuela-data-lake-factory-mirror-maker
+spec:
+  clusters:
+  - alias: manuela-factory
+    bootstrapServers: manuela-kafka-cluster-kafka-bootstrap.manuela-stormshift-messaging.svc:9092
+    config:
+      config.storage.replication.factor: 1
+      offset.storage.replication.factor: 1
+      status.storage.replication.factor: 1
+  - alias: ods-target-cluster
+    authentication:
+      clientId: "<Target Client ID>" # The Client ID for the service account for the target Kafka cluster
+      clientSecret: # A reference to a Kubernetes Secret that contains the Client Secret for the service account for the target Kafka cluster
+        key: client-secret
+        secretName: target-client-secret
+      tokenEndpointUri: "https://identity.api.openshift.com/auth/realms/rhoas/protocol/openid-connect/token"
+      type: oauth # Red Hat OpenShift Streams for Apache Kafka prefers OAuth for connections
+    bootstrapServers: "<Target Cluster Bootstrap server>" # The bootstrap server host for the target cluster
+    config:
+      config.storage.replication.factor: 3
+      offset.storage.replication.factor: 3
+      status.storage.replication.factor: 3
+    tls:
+      trustedCertificates: []
+  connectCluster: ods-target-cluster
+  mirrors:
+  - checkpointConnector:
+      config:
+        checkpoints.topic.replication.factor: 3
+        emit.checkpoints.interval.seconds: 60
+        refresh.groups.interval.seconds: 60
+        sync.group.offsets.enabled: true
+        sync.group.offsets.interval.seconds: 60
+    groupsPattern: .*
+    sourceCluster: manuela-factory
+    sourceConnector:
+      config:
+        refresh.topics.interval.seconds: 60
+        replication.factor: 3
+        sync.topic.acls.enabled: true
+    targetCluster: ods-target-cluster
+    topicsPattern: .*
+  replicas: 1
