@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: manuela-quickstart-messaging
 resources:
 - messaging-namespace.yaml
+- manuela-quickstart-messaging-rolebinding.yaml
 - messaging-operatorgroup.yaml
 patchesStrategicMerge:
 - route.yaml
@@ -12,7 +13,7 @@ patchesStrategicMerge:
 bases:
 #- github.com/sa-mw-dach/manuela-gitops/config/templates/manuela/messaging
 - ../../../templates/manuela-openshift/messaging
-- ../../../templates/installplan-approver
+#- ../../../templates/installplan-approver
 
 images:
 - name: messaging

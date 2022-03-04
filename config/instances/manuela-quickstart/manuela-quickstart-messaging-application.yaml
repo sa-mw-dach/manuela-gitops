@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: manuela-quickstart-messaging
-  namespace: argocd
+  namespace: openshift-gitops
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/fpopp-redhat/manuela-gitops.git
-    targetRevision: master
+    repoURL: https://github.com/sa-mw-dach/manuela-gitops.git
+    targetRevision: HEAD
     path: config/instances/manuela-quickstart/messaging
   destination:
     server: https://kubernetes.default.svc
@@ -18,6 +18,8 @@ spec:
     automated: 
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
   ignoreDifferences:
   - group: apps
     kind: Deployment
@@ -35,3 +37,8 @@ spec:
     kind: DeploymentConfig
     jsonPointers:
     - /spec/template/spec/containers/0/image
+  - group: broker.amq.io
+    kind: ActiveMQArtemis
+    jsonPointers:
+    - /metadata/labels/argocd.argoproj.io/instance
+    - /metadata/labels/app.kubernetes.io/instance

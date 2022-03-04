@@ -3,4 +3,5 @@ kind: Namespace
 metadata:
   name: manuela-quickstart-messaging
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-10"
+    argocd.argoproj.io/managed-by: openshift-gitops
