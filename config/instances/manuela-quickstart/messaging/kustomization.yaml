@@ -19,3 +19,4 @@ images:
 - name: messaging
   newName: quay.io/manuela/iot-consumer
   newTag: quickstart
+
