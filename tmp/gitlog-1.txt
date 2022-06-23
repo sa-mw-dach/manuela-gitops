@@ -1,0 +1,517 @@
+commit bf2dc3d5cd3915149082e86f1ee03f5a47901c2d (HEAD -> master, origin/master, origin/HEAD)
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:13:55 2022 +0100
+
+    adapt base DNS names
+
+commit 758cd5c269e8d62fdcb33b404467ff1f4715f6e2
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:06:41 2022 +0100
+
+    adapt repo URLs
+
+commit acdef96e39c764785d350a878895d5d04b058921
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:59:21 2022 +0100
+
+    undeploy application
+
+commit 3f2c4b7aedb0cf48194d142adb29b3f5adb58c74
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:42:44 2022 +0100
+
+    deploy application
+
+commit 6a40b9b4bc21eec47bd547daa66fa7b259006c9a
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 10:49:22 2022 +0100
+
+    re-add operator group
+
+commit a03a0a0474abff737044558b713dcd0a61ccf63d
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:32:56 2022 +0100
+
+    re-add   amq-operator-subscription.yaml
+
+commit a98472937b20fc0c1719d2f6732cd3b88b1fd0a9
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:14:56 2022 +0100
+
+    set sync-wave for rolebinding
+
+commit 7f16135f479de504655dd33f95d4fae6799b6add
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:46:40 2022 +0100
+
+    add rolebinding to kustomize
+
+commit 8bf73e32e6f0c96ed1e3ce2fc7c842f7d06e7cd1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:39:41 2022 +0100
+
+    fix missing file
+
+commit a81e788df0f33fb1ec2daa80e9d86c4eb55a59c8
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:55:24 2022 +0100
+
+    Update manuela-quickstart-line-dashboard namespace
+
+commit 15b5d92c8a5901ac8e20d6865f1190245ecb3a30
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:48:06 2022 +0100
+
+    Update argo appication in quickstart for
+    openshift-gitops
+
+commit cf7a5c5bed2e57dbdbb936b8152460287d9cb638
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:43:12 2022 +0100
+
+    Ad rolebindings for quickstart
+
+commit 91c3eaa1f031814bf8cf9211f0096d40ca32c392
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:24:07 2022 +0100
+
+    drop operatorgroup
+
+commit 490b970be7d1be400ba18c8920325d318c3540de
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:07:52 2022 +0100
+
+    Update ActiveMQArtemis
+
+commit d953ad63f5c21fce51975a23d33a950ea65c8bdb
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 13:27:37 2022 +0100
+
+    Update quistart messasing
+
+commit 5c5629b2f2f88db7156612836d5aae6d0a51f3ca
+Author: Stefan Bergstein <stefan.bergstein@commit bf2dc3d5cd3915149082e86f1ee03f5a47901c2d (HEAD -> master, origin/master, origin/HEAD)
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:13:55 2022 +0100
+
+    adapt base DNS names
+
+commit 758cd5c269e8d62fdcb33b404467ff1f4715f6e2
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:06:41 2022 +0100
+
+    adapt repo URLs
+
+commit acdef96e39c764785d350a878895d5d04b058921
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:59:21 2022 +0100
+
+    undeploy application
+
+commit 3f2c4b7aedb0cf48194d142adb29b3f5adb58c74
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:42:44 2022 +0100
+
+    deploy application
+
+commit 6a40b9b4bc21eec47bd547daa66fa7b259006c9a
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 10:49:22 2022 +0100
+
+    re-add operator group
+
+commit a03a0a0474abff737044558b713dcd0a61ccf63d
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:32:56 2022 +0100
+
+    re-add   amq-operator-subscription.yaml
+
+commit a98472937b20fc0c1719d2f6732cd3b88b1fd0a9
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:14:56 2022 +0100
+
+    set sync-wave for rolebinding
+
+commit 7f16135f479de504655dd33f95d4fae6799b6add
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:46:40 2022 +0100
+
+    add rolebinding to kustomize
+
+commit 8bf73e32e6f0c96ed1e3ce2fc7c842f7d06e7cd1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:39:41 2022 +0100
+
+    fix missing file
+
+commit a81e788df0f33fb1ec2daa80e9d86c4eb55a59c8
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:55:24 2022 +0100
+
+    Update manuela-quickstart-line-dashboard namespace
+
+commit 15b5d92c8a5901ac8e20d6865f1190245ecb3a30
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:48:06 2022 +0100
+
+    Update argo appication in quickstart for
+    openshift-gitops
+
+commit cf7a5c5bed2e57dbdbb936b8152460287d9cb638
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:43:12 2022 +0100
+
+    Ad rolebindings for quickstart
+
+commit 91c3eaa1f031814bf8cf9211f0096d40ca32c392
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:24:07 2022 +0100
+
+    drop operatorgroup
+
+commit 490b970be7d1be400ba18c8920325d318c3540de
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:07:52 2022 +0100
+
+    Update ActiveMQArtemis
+
+commit d953ad63f5c21fce51975a23d33a950ea65c8bdb
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 13:27:37 2022 +0100
+
+    Update quistart messasing
+
+commit 5c5629b2f2f88db7156612836d5aae6d0a51f3ca
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 23:03:26 2022 +0100
+
+    add managed-by label
+
+commit 3d85866cd13dda983330d3c9bad3db1f67b42aed
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:47 2022 +0100
+
+    deploy application
+
+commit bd393e7e0ced4ca423bb20d4fa028b81fbfbb94f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:03 2022 +0100
+
+    deploy application
+
+commit 0ad2623454d5c829a6321a5e0f0e40ffb24c933f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 20:39:08 2022 +0100
+
+    changes for argo project manuela-quickstart
+
+commit f9502ce6c7b436eb6a431d8be71939c17d3a16e1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:53:05 2022 +0100
+
+    deploy application
+
+commit 734e34bc3b626833105fb2037bd422743b26f5ba
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:50:05 2022 +0100
+
+    adapt base DNS names
+commit bf2dc3d5cd3915149082e86f1ee03f5a47901c2d (HEAD -> master, origin/master, origin/HEAD)
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:13:55 2022 +0100
+
+    adapt base DNS names
+
+commit 758cd5c269e8d62fdcb33b404467ff1f4715f6e2
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:06:41 2022 +0100
+
+    adapt repo URLs
+
+commit acdef96e39c764785d350a878895d5d04b058921
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:59:21 2022 +0100
+
+    undeploy application
+
+commit 3f2c4b7aedb0cf48194d142adb29b3f5adb58c74
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:42:44 2022 +0100
+
+    deploy application
+
+commit 6a40b9b4bc21eec47bd547daa66fa7b259006c9a
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 10:49:22 2022 +0100
+
+    re-add operator group
+
+commit a03a0a0474abff737044558b713dcd0a61ccf63d
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:32:56 2022 +0100
+
+    re-add   amq-operator-subscription.yaml
+
+commit a98472937b20fc0c1719d2f6732cd3b88b1fd0a9
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:14:56 2022 +0100
+
+    set sync-wave for rolebinding
+
+commit 7f16135f479de504655dd33f95d4fae6799b6add
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:46:40 2022 +0100
+
+    add rolebinding to kustomize
+
+commit 8bf73e32e6f0c96ed1e3ce2fc7c842f7d06e7cd1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:39:41 2022 +0100
+
+    fix missing file
+
+commit a81e788df0f33fb1ec2daa80e9d86c4eb55a59c8
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:55:24 2022 +0100
+
+    Update manuela-quickstart-line-dashboard namespace
+
+commit 15b5d92c8a5901ac8e20d6865f1190245ecb3a30
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:48:06 2022 +0100
+
+    Update argo appication in quickstart for
+    openshift-gitops
+
+commit cf7a5c5bed2e57dbdbb936b8152460287d9cb638
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:43:12 2022 +0100
+
+    Ad rolebindings for quickstart
+
+commit 91c3eaa1f031814bf8cf9211f0096d40ca32c392
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:24:07 2022 +0100
+
+    drop operatorgroup
+
+commit 490b970be7d1be400ba18c8920325d318c3540de
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:07:52 2022 +0100
+
+    Update ActiveMQArtemis
+
+commit d953ad63f5c21fce51975a23d33a950ea65c8bdb
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 13:27:37 2022 +0100
+
+    Update quistart messasing
+
+commit 5c5629b2f2f88db7156612836d5aae6d0a51f3ca
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 23:03:26 2022 +0100
+
+    add managed-by label
+
+commit 3d85866cd13dda983330d3c9bad3db1f67b42aed
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:47 2022 +0100
+
+    deploy application
+
+commit bd393e7e0ced4ca423bb20d4fa028b81fbfbb94f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:03 2022 +0100
+
+    deploy application
+
+commit 0ad2623454d5c829a6321a5e0f0e40ffb24c933f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 20:39:08 2022 +0100
+
+    changes for argo project manuela-quickstart
+
+commit f9502ce6c7b436eb6a431d8be71939c17d3a16e1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:53:05 2022 +0100
+
+    deploy application
+
+commit 734e34bc3b626833105fb2037bd422743b26f5ba
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:50:05 2022 +0100
+
+    adapt base DNS names
+
+commit 543d5807c41141a784c6cd6f0e194b63cc5d5ac9
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 16:24:22 2022 +0100
+
+    adapt repo URLs
+gmail.com>
+Date:   Fri Jan 14 23:03:26 2022 +0100
+
+    add managed-by label
+
+commit 3d85866cd13dda983330d3c9bad3db1f67b42aed
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:47 2022 +0100
+
+    deploy application
+
+commit bd393e7e0ced4ca423bb20d4fa028b81fbfbb94f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:03 2022 +0100
+
+    deploy application
+
+commit 0ad2623454d5c829a6321a5e0f0e40ffb24c933f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 20:39:08 2022 +0100
+
+    changes for argo project manuela-quickstart
+
+commit f9502ce6c7b436eb6a431d8be71939c17d3a16e1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:53:05 2022 +0100
+
+    deploy application
+
+commit 734e34bc3b626833105fb2037bd422743b26f5ba
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:50:05 2022 +0100
+
+    adapt base DNS names
+commit bf2dc3d5cd3915149082e86f1ee03f5a47901c2d (HEAD -> master, origin/master, origin/HEAD)
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:13:55 2022 +0100
+
+    adapt base DNS names
+
+commit 758cd5c269e8d62fdcb33b404467ff1f4715f6e2
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 12:06:41 2022 +0100
+
+    adapt repo URLs
+
+commit acdef96e39c764785d350a878895d5d04b058921
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:59:21 2022 +0100
+
+    undeploy application
+
+commit 3f2c4b7aedb0cf48194d142adb29b3f5adb58c74
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 11:42:44 2022 +0100
+
+    deploy application
+
+commit 6a40b9b4bc21eec47bd547daa66fa7b259006c9a
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Feb 20 10:49:22 2022 +0100
+
+    re-add operator group
+
+commit a03a0a0474abff737044558b713dcd0a61ccf63d
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:32:56 2022 +0100
+
+    re-add   amq-operator-subscription.yaml
+
+commit a98472937b20fc0c1719d2f6732cd3b88b1fd0a9
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 14:14:56 2022 +0100
+
+    set sync-wave for rolebinding
+
+commit 7f16135f479de504655dd33f95d4fae6799b6add
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:46:40 2022 +0100
+
+    add rolebinding to kustomize
+
+commit 8bf73e32e6f0c96ed1e3ce2fc7c842f7d06e7cd1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 13:39:41 2022 +0100
+
+    fix missing file
+
+commit a81e788df0f33fb1ec2daa80e9d86c4eb55a59c8
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:55:24 2022 +0100
+
+    Update manuela-quickstart-line-dashboard namespace
+
+commit 15b5d92c8a5901ac8e20d6865f1190245ecb3a30
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:48:06 2022 +0100
+
+    Update argo appication in quickstart for
+    openshift-gitops
+
+commit cf7a5c5bed2e57dbdbb936b8152460287d9cb638
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sat Feb 19 12:43:12 2022 +0100
+
+    Ad rolebindings for quickstart
+
+commit 91c3eaa1f031814bf8cf9211f0096d40ca32c392
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:24:07 2022 +0100
+
+    drop operatorgroup
+
+commit 490b970be7d1be400ba18c8920325d318c3540de
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 14:07:52 2022 +0100
+
+    Update ActiveMQArtemis
+
+commit d953ad63f5c21fce51975a23d33a950ea65c8bdb
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Sun Jan 30 13:27:37 2022 +0100
+
+    Update quistart messasing
+
+commit 5c5629b2f2f88db7156612836d5aae6d0a51f3ca
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 23:03:26 2022 +0100
+
+    add managed-by label
+
+commit 3d85866cd13dda983330d3c9bad3db1f67b42aed
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:47 2022 +0100
+
+    deploy application
+
+commit bd393e7e0ced4ca423bb20d4fa028b81fbfbb94f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 21:20:03 2022 +0100
+
+    deploy application
+
+commit 0ad2623454d5c829a6321a5e0f0e40ffb24c933f
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 20:39:08 2022 +0100
+
+    changes for argo project manuela-quickstart
+
+commit f9502ce6c7b436eb6a431d8be71939c17d3a16e1
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:53:05 2022 +0100
+
+    deploy application
+
+commit 734e34bc3b626833105fb2037bd422743b26f5ba
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 17:50:05 2022 +0100
+
+    adapt base DNS names
+
+commit 543d5807c41141a784c6cd6f0e194b63cc5d5ac9
+Author: Stefan Bergstein <stefan.bergstein@gmail.com>
+Date:   Fri Jan 14 16:24:22 2022 +0100
+
+    adapt repo URLs
+
