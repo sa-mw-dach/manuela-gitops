@@ -1,5 +1,5 @@
 {
-    "websocketHost": "http://messaging-manuela-quickstart-messaging.apps-crc.testing",
+    "websocketHost": "http://messaging-manuela-quickstart-messaging.apps.cluster-jcr84.jcr84.sandbox748.opentlc.com",
     "websocketPath": "/api/service-web/socket",
     "SERVER_TIMEOUT": 20000
 }
