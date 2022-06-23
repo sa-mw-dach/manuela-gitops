@@ -4,7 +4,7 @@ metadata:
   name: manuela-quickstart-machine-sensor-role-binding
   namespace: manuela-quickstart-machine-sensor
   annotations:
-    argocd.argoproj.io/sync-wave: "-1"
+    argocd.argoproj.io/sync-wave: "-10"
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
